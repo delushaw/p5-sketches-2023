@@ -20,6 +20,3 @@ function setup(){
 
 
 
-
-//anything you put in draw will happen over and over again
-
