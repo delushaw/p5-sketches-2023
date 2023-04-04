@@ -16,12 +16,8 @@ function setup() {
     
 
     
-        fill('#64B6AC');
-        //myfont.textSize(600);
+        fill('#FFFFCC');
         textFont(myFont);
-        
-        //text('fffffs', 10, 500);
-      
 
          points = myFont.textToPoints('D', 10, 700, 800);
 
@@ -35,7 +31,7 @@ function setup() {
 }
 
 function draw() {
-    background(274,215,220)
+    background(214,215,190)
     // noFill();
     // strokeWeight(10)
     // stroke(mouseX,mouseY,0)
