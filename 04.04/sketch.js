@@ -11,6 +11,7 @@ function setup(){
 function draw(){
     background(300,200,100);
     noStroke();
+    rect(150,250,180,400)
 
     translate(width / 2, height /2)
 
@@ -27,8 +28,8 @@ function draw(){
         var r = map(sin(i), -1, 1, 100, 200)
 
         rotate(space)
-        ellipse(30,30,30)
-        rect(200, 0, h, 1)
+        ellipse(70,30,100, 300)
+        rect(350, 0, h, 1)
 
         start +=0.01
         
