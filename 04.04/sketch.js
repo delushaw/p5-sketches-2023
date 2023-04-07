@@ -11,7 +11,7 @@ function setup(){
 function draw(){
     background(300,200,100);
     noStroke();
-    rect(280,250,180,400)
+    rect(280,220,180,400)
 
     translate(width / 2, height /2)
 
