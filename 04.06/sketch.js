@@ -1,38 +1,45 @@
-function setup(){
-  createCanvas(1000,1000, WEBGL)
-  angleMode(DEGREES)
+let message = 'DdDdDdDdDdDdDdDd';
+let messageX;
+const xSpeed = 3;
+const ySpeed = 0.10;
+const amplitude = 100;
+const verticalLetterSpacing = 20;
+let font;
+
+function preload() {
+  font = loadFont('FloryannaDemo-pnlK.ttf');
 }
 
-function draw(){
-  background(30)
+function setup() {
+  createCanvas(1000, 1000);
+  
+  textFont(font);
 
-  rotateX(60)
+  messageX = width;
+}
 
-  noFill()
-  stroke(255)
+function draw() {
+  background(32);
+  fill(255, 153, 204);
 
+  textSize(200);
 
+  for (let i = 0; i < message.length; i++) {
+    const letterX = messageX + textWidth(message.substring(0, i));
 
+    const letterOffset = i * verticalLetterSpacing;
+    const letterY = height / 2 +
+      sin((frameCount - letterOffset) * ySpeed) * amplitude;
 
-for(var i = 0; 1 <50; i++) {
-
-  var r = map(sin(frameCount / 2), -1, 1, 100, 200)
-  var g = map(i, 0, 50 , 100, 200)
-  var b = map(cos(frameCount), -1, 1, 200, 100)
-
-  stroke(r,g,b)
-
-  rotate(frameCount / 50)
-
-  beginShape()
-  for (var j = 0; j < 360; j += 60){
-    var rad= 1 * 3
-    var x = rad * cos(j)
-    var y = rad * sin(j)
-    var z= sin(frameCount * 2 + i * 5) * 50
-
-    vertex (x, y, z)
-    }
-  endShape(CLOSE)
+    text(message[i], letterX, letterY);
   }
+
+  messageX -= xSpeed;
+  if (messageX < - textWidth(message)) {
+    messageX = width + 50;
+  }
+
+  textSize(24);
+  fill(200);
 }
+
