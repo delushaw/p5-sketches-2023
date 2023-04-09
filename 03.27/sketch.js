@@ -1,7 +1,7 @@
 let img;
 
 function setup(){
-createCanvas(1000,1100);
+createCanvas(1000,1000);
 img = loadImage('Phineas_D.png');
 
 }

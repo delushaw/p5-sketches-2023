@@ -11,7 +11,7 @@ function preload(){
 let t = 0;
 function setup() {
     
-    c = createCanvas(1500, 1500);
+    c = createCanvas(1000, 1000);
     
     
 
@@ -23,7 +23,7 @@ function setup() {
         //text('fffffs', 10, 500);
       
 
-         points = myFont.textToPoints('D d', 10, 700, 800)
+         points = myFont.textToPoints('D d', 40, 500, 500)
 
 }
 

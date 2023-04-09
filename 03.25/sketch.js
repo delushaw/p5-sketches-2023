@@ -12,7 +12,7 @@ function preload() {
    
     
 function setup() {
-        c = createCanvas(1500,1500);
+        c = createCanvas(1000,1000);
         textSize(100);
         textFont(ourFont);
 
@@ -24,7 +24,7 @@ function setup() {
 }
 
 function draw() {
- //background(255);   
+ background(230);   
 
 
 

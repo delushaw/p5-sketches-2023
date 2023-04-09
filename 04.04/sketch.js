@@ -1,7 +1,7 @@
 var start = 0
 
 function setup(){
-    createCanvas(windowWidth, windowHeight);
+    createCanvas(1000, 1000);
     angleMode(DEGREES);
     
     noiseDetail(2, 1)
@@ -11,7 +11,7 @@ function setup(){
 function draw(){
     background(300,200,100);
     noStroke();
-    rect(630,250,180,400)
+    rect(290,300,100,400)
 
     translate(width / 2, height /2)
 
@@ -28,8 +28,9 @@ function draw(){
         var r = map(sin(i), -1, 1, 100, 200)
 
         rotate(space)
-        ellipse(70,30,100, 300)
-        rect(350, 0, h, 1)
+        rect(200, 0, h, 1)
+        rect(150, 50, h, 1)
+        rect(50, 100, h, 1)
 
         start +=0.01
         

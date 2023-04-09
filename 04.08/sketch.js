@@ -1,7 +1,7 @@
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(1000, 1000);
   noFill();
-  strokeWeight(5)
+  strokeWeight(2)
 }
 
 function draw() {
@@ -10,7 +10,7 @@ function draw() {
   let t = map(mouseX, 0, width, -5, 5);
   curveTightness(t);
   beginShape();
-  scale(3)
+  scale(8)
   curveVertex(-110, -190);
   curveVertex(-110, 200);
   curveVertex(93, 50);

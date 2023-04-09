@@ -11,7 +11,7 @@ function preload(){
 let t = 0;
 function setup() {
     
-    c = createCanvas(750,750);
+    c = createCanvas(1000, 1000);
     
     
 

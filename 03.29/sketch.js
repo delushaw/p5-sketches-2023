@@ -1,8 +1,10 @@
+
+
 var x =0;
 var speed= 5;
 
 function setup(){
-  createCanvas(600, 400);
+  createCanvas(1000, 1000);
 }
 
 function draw(){
@@ -10,8 +12,8 @@ function draw(){
   stroke(255);
   strokeWeight(4);
   fill(251,138,215);
-  ellipse(x,200,105,100);
-  rect(x,100,50,150, 150);
+  ellipse(x,500,500,500);
+  rect(x,100,250,650,50);
   
 
   if (x>width){
@@ -19,3 +21,12 @@ function draw(){
   }
   x = x + speed;
 }
+
+
+
+  background(205,261,163);
+  stroke(255);
+  strokeWeight(4);
+  fill(251,138,215);
+  ellipse(x,500,500,500);
+  rect(x,100,250,650,50);

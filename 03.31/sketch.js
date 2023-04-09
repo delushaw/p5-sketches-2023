@@ -11,12 +11,12 @@ function preload() {
    
     
 function setup() {
-        c = createCanvas(1400,850);
+        c = createCanvas(1000,1000);
         textSize(100);
         textFont(ourFont);
 
 
-        points = ourFont.textToPoints("DDDDD",100,600,600);
+        points = ourFont.textToPoints("DDDD",100,600,600);
         
 
         i=0;
