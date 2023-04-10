@@ -18,6 +18,7 @@ function draw() {
   shininess(50);
   torus(90, 40, 94, 94);
   torus(-90, 40, 94, 94);
+  torus(600, 40, 94, 94);
   rect(-190, -140, 140, 290, 300);
   
 
