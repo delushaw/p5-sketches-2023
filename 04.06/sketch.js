@@ -38,8 +38,5 @@ function draw() {
   if (messageX < - textWidth(message)) {
     messageX = width + 50;
   }
-
-  textSize(24);
-  fill(200);
 }
 

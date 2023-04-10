@@ -1,18 +1,20 @@
 let angle = 0;
 
-let myFont;
-
 let graphics;
 
 let D;
 
+let ourFont;
+
 
 function preload(){
-  myFont = loadFont('RubikPixels-Regular.ttf')
+  ourFont = loadFont('assets/RubikPixels-Regular.ttf');
 }
 
 function setup(){
-  textFont(myFont);
+
+  textFont(ourFont);
+  
   createCanvas(1000,1000, WEBGL);
   graphics = createGraphics(200,200);
   graphics.background(255);
@@ -25,7 +27,6 @@ function setup(){
 
 function draw(){
   background(250,218,221);
-  graphics.ellipse(mouseX, mouseY, 20);
   ambientLight(100);
   directionalLight(255, 255, 255, 0, 0, 1);
   rotateX(angle);
@@ -33,7 +34,7 @@ function draw(){
   rotateZ(angle * 0.7);
 
   texture(D);
-  stroke(250,218,221)
+  stroke(250,218,221);
   box(400);
 
   angle +=0.03;
