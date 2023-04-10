@@ -4,7 +4,7 @@ let c;
 let myFont;
 let points
 function preload(){
-    myFont = loadFont('Tillana-SemiBold.ttf')
+    myFont = loadFont('RubikPixels-Regular.ttf')
 }
 
 
@@ -16,22 +16,21 @@ function setup() {
     
 
     
-        fill('#FFFFCC');
+        fill('#82EEFD');
         textFont(myFont);
 
-         points = myFont.textToPoints('D', 10, 700, 800);
+         points = myFont.textToPoints('D', 200, 750, 800);
 
           
 
     
-    //  background(0)
     //rect(100,100,50,300)
     //ellipse(400, 200, 500)
 
 }
 
 function draw() {
-    background(214,215,190)
+    background(235,127,80)
     // noFill();
     // strokeWeight(10)
     // stroke(mouseX,mouseY,0)
@@ -41,8 +40,8 @@ function draw() {
 t=t+0.001;
     noise(t)
     for (let i=0; i<points.length;i++) {
-        rect(points[i].x, points[i].y, noise(t*points[i].x)*50)
-        circle(points[i].x, points[i].y, noise(t*points[i].x)*50)
+        rect(points[i].x, points[i].y, noise(t*points[i].x)*40)
+        circle(points[i].x, points[i].y, noise(t*points[i].x)*40)
       }
       
       

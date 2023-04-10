@@ -23,7 +23,7 @@ function setup() {
         //text('fffffs', 10, 500);
       
 
-         points = myFont.textToPoints('D d', 40, 500, 500)
+         points = myFont.textToPoints('D d', 40, 600, 500)
 
 }
 

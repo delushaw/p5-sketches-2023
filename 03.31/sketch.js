@@ -11,12 +11,12 @@ function preload() {
    
     
 function setup() {
-        c = createCanvas(1000,1000);
+        c = createCanvas(1000,1000, WEBGL);
         textSize(100);
         textFont(ourFont);
 
 
-        points = ourFont.textToPoints("DDDD",100,600,600);
+        points = ourFont.textToPoints("DDDD",-300,100,400);
         
 
         i=0;
@@ -24,7 +24,7 @@ function setup() {
 }
 
 function draw() {
- background(182,123,259);   
+ background(50);   
 
 
 
@@ -37,7 +37,7 @@ function draw() {
    
    
    for(let i=0; i<points.length; i++) {
-    fill(random(295),127,214)
+    fill(random(255),28,94)
     rect(points[i].x+random(-5,5), points[i].y+random(-5,5),random(10,60))
 }
 }
