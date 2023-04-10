@@ -84,14 +84,22 @@ function draw(){
     //     ellipse(mouseX, mouseY, 50);
     // }
 
+    
+
     for (let i=0; i<100; i++) {
+        fill(255,96,144);
         ellipse(random(width), random(height), 30);
+        fill(30,144,255);
         rect(random(width), random(height), 30);
+        
     }
     
+    fill(255,96,144);
     ellipse(600+random(50), 550+random(50), 300+random(50));
+    fill(30,144,255);
     rect(700+random(50), 250+random(50), 450+random(50));
-    fill(168,136,275);
+    
+    
     
     // console.log("no value: "+ random());
     // console.log("one value: "+ random(100)); // value between 100
